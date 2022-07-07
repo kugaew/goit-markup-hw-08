@@ -1,0 +1,36 @@
+.footer-contacts__container {
+    margin-right: 70px;    
+}
+
+
+.footer-contacts__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer-contact__link {
+    color: var(--footer-mailphone-text-color);
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    @include animated(color);
+
+    transition-property: color;
+    transition-duration: var(--trans-duration);
+    transition-timing-function: var(--trans-timing);
+
+    &:focus,
+    &:hover {
+        color: var(--action-color);
+    }
+}
+
+.footer-contact__link-adress {
+    color: var(--footer-contact-link-adress-colot);
+}

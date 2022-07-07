@@ -1,0 +1,30 @@
+.footer-social__container {
+    margin-right: 93px;
+}
+
+
+.footer-social__title {
+    margin-bottom: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--footer-social-title-color);
+}
+
+.footer-social-list__link {
+    color: var(--footer-social-icon-color);
+    background-color: var(--footer-social-icon-background-color-passed);
+
+    @include animated(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--footer-social-icon-background-color-actived);
+    }
+}
