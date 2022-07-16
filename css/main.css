@@ -181,6 +181,12 @@ ul {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -316,12 +322,12 @@ ul {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
-  max-width: 1600px;
+  height: 400px;
+  max-width: 480px;
   background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url("../images/hero_background.jpg");
   background-color: var(--hero-background-color);
   background-repeat: no-repeat;
@@ -329,19 +335,42 @@ ul {
   background-size: cover;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    max-width: 1600px;
+  }
+}
 
 .hero__title {
+  width: 360px;
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
   color: var(--hero-title-color);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
 .hero__button {

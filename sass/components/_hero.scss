@@ -1,11 +1,12 @@
-.hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+.hero {    
+    padding-top: 118px;
+    padding-bottom: 118px;
+
     margin-left: auto;
     margin-right: auto;
 
-    height: 600px;
-    max-width: 1600px;
+    height: 400px; 
+    max-width: $mobile;   
 
     background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url('../images/hero_background.jpg');
     background-color: var(--hero-background-color);
@@ -14,23 +15,47 @@
     background-size: cover;
 
     text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        max-width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        height: 600px;
+        max-width: 1600px
+    }
 }
 
 
 .hero__title {
+    width: 360px;
+
     margin-top: 0;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 696px;
 
     color: var(--hero-title-color);
 
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 42px;
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+        width: 696px;
+
+        font-size: 44px;
+        line-height: 60px;
+    }
 }
 
 .hero__button {
