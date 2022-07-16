@@ -190,7 +190,7 @@
 .field-fill__checkbox-icon--check {
     display: none;
 
-    .field-fill__checkbox:checked~& {
+    .field-fill__checkbox:checked ~ & {
         display: block;
         background-color: var(--modal-action-color);
         margin-right: 8.38px;
