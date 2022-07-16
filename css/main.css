@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --main-text-color: #757575;
   --title-text-color: #212121;
@@ -72,6 +71,7 @@ ul {
   /* width: 1200px; */
   padding: 0 15px;
   margin: 0 auto;
+  min-width: 320px;
   outline: 1px red solid;
 }
 @media screen and (min-width: 480px) {
@@ -328,6 +328,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   height: 400px;
+  min-width: 320px;
   max-width: 480px;
   background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url("../images/hero_background.jpg");
   background-color: var(--hero-background-color);
@@ -351,8 +352,7 @@ ul {
 }
 
 .hero__title {
-  width: 320px;
-  /* исходя из минимальной ширины 320 в ТЗ */
+  max-width: 360px;
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
@@ -367,14 +367,9 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) {
-  .hero__title {
-    width: 360px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 60px;
   }
@@ -634,6 +629,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
   }
 }
 
@@ -707,6 +703,9 @@ ul {
 
 .our-jobs {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
 .our-jobs__img {
@@ -715,10 +714,10 @@ ul {
 
 .our-jobs__item {
   position: relative;
-  margin-right: 30px;
-}
-.our-jobs__item:last-child {
-  margin-right: 0;
+  /* margin-right: 30px;
+  &:last-child {
+      margin-right: 0;
+  } */
 }
 
 .our-jobs__text {
@@ -747,6 +746,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .team__item {
@@ -775,6 +775,23 @@ ul {
 .team__photo {
   margin-bottom: 30px;
   display: block;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 480px) {
+  .team__photo {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__photo {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__photo {
+    width: 270px;
+  }
 }
 
 .team__list {

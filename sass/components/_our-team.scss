@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
 }
 
 .team__item {
@@ -36,6 +37,22 @@
 .team__photo {
     margin-bottom: 30px;
     display: block;
+
+    width: 100%;
+    height: auto;
+
+    @media screen and (min-width: $mobile) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+    }
+    
 }
 
 .team__list {

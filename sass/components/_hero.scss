@@ -6,6 +6,7 @@
     margin-right: auto;
 
     height: 400px; 
+    min-width: 320px;
     max-width: $mobile;   
 
     background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url('../images/hero_background.jpg');
@@ -30,9 +31,8 @@
 }
 
 
-.hero__title {
-    
-    width: 320px; /* исходя из минимальной ширины 320 в ТЗ */
+.hero__title {    
+    max-width: 360px;
 
     margin-top: 0;
     margin-bottom: 30px;
@@ -51,12 +51,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    @media screen and (min-width: $mobile) {
-        width: 360px;
-    }
-
     @media screen and (min-width: $desktop) {
-        width: 696px;
+        max-width: 696px;
 
         font-size: 44px;
         line-height: 60px;
