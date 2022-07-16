@@ -4,11 +4,6 @@
     @media screen and (min-width: $tablet) {
         display: flex;   
         flex-wrap: wrap;
-            gap: 30px;
-    }
-
-    @media screen and (max-width: calc($desktop - 1px)) {
-        flex-wrap: wrap;
         gap: 30px;
     }
 }
@@ -31,11 +26,6 @@
 
     @media screen and (min-width: $desktop) {
         max-width: 270px;
-        /* margin-right: 30px;
-
-        &:last-child {
-            margin-right: 0;
-        } */
     }    
 }
 
