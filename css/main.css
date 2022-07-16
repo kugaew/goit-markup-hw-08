@@ -696,7 +696,13 @@ ul {
 }
 
 .section-our-jobs {
+  display: none;
   padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .section-our-jobs {
+    display: block;
+  }
 }
 
 .our-jobs {
