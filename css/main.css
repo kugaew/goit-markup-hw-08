@@ -1166,7 +1166,9 @@ ul {
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
-  height: 100%;
+  /* 
+
+  height: 100%; */
 }
 
 .portfolio__image {
