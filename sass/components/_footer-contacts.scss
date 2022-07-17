@@ -1,13 +1,28 @@
 .footer-contacts__container {
-    margin-right: 70px;    
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+        margin-right: 70px;
+    }
 }
 
 
 .footer-contacts__item {
     margin-bottom: 9px;
 
+    text-align: center;
+
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        text-align: left;
     }
 }
 
