@@ -227,6 +227,7 @@ ul {
   display: flex;
   /* display: block; */
   align-items: center;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .navigate {
@@ -235,7 +236,7 @@ ul {
 }
 
 .navigate-mobile__button {
-  background-color: inherit;
+  /* background-color: inherit; */
   border: none;
   /* display: inline-block; */
   /* @media screen and (max-width: calc($tablet - 1px)) {
