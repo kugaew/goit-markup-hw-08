@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 
     @media screen and (min-width: $tablet) {
         justify-content: center;
@@ -19,6 +19,10 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    @media screen and (max-width: calc($tablet - 1px)) {
+            margin-bottom: 15px;
     }
 }
 
