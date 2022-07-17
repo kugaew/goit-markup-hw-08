@@ -1,7 +1,17 @@
 .filter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 56px;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
 }
 
 .filter__item {
