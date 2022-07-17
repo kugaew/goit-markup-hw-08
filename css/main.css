@@ -1116,16 +1116,48 @@ ul {
 }
 
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.portfolio__item {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
   transition-property: box-shadow;
   transition-duration: var(--trans-duration);
   transition-timing-function: var(--trans-timing);
+}
+@media screen and (min-width: 480px) {
+  .portfolio__link {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__link {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__link {
+    width: 370px;
+  }
 }
 .portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1134,18 +1166,24 @@ ul {
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 .portfolio__image {
   display: block;
+  width: 100%;
+  height: 294px;
+  /* height: auto; */
 }
 
 .portfolio__text {
   position: absolute;
   top: 100%;
   display: block;
-  width: 370px;
-  height: 294px;
+  /* width: 370px;*/
+  /* height: 294px; */
+  width: 100%;
+  height: 100%;
   padding-top: 63px;
   padding-right: 24px;
   padding-bottom: 63px;
@@ -1165,6 +1203,18 @@ ul {
 .portfolio__link:hover .portfolio__text {
   transform: translateY(-100%);
 }
+@media screen and (max-width: 479px) {
+  .portfolio__text {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .portfolio__text {
+    padding-top: 77px;
+    padding-bottom: 77px;
+  }
+}
 
 .portfolio__border {
   border-bottom: 1px solid var(--portfolio-card-bottom-part-border-color);
@@ -1174,6 +1224,7 @@ ul {
   padding-left: 24px;
   padding-bottom: 20px;
   padding-right: 24px;
+  flex-grow: 1;
 }
 
 .portfolio__title {
