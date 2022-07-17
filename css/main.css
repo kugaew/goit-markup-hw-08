@@ -961,6 +961,11 @@ ul {
   text-align: center;
   color: var(--footer-social-title-color);
 }
+@media screen and (min-width: 1200px) {
+  .footer-social__title {
+    text-align: left;
+  }
+}
 
 .footer-social-list__link {
   color: var(--footer-social-icon-color);
