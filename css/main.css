@@ -68,11 +68,10 @@ ul {
 }
 
 .container {
-  /* width: 1200px; */
   padding: 0 15px;
   margin: 0 auto;
   min-width: 320px;
-  outline: 1px red solid;
+  /* outline: 1px red solid; */
 }
 @media screen and (min-width: 480px) {
   .container {
