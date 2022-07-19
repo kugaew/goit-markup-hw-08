@@ -8,7 +8,9 @@
     }
 }
 
-/* .portfolio__item {
+/* !!!!!!!!!!!!!!!!!!!!!!!!!Переписать!!!!!!!!!!!!!!!!!!!!!!! */
+
+.portfolio__item {
     margin-bottom: 30px;
     
     
@@ -21,7 +23,7 @@
     @media screen and (min-width: $tablet) {
         margin-bottom: 0;
     }
-} */
+}
 
 .portfolio__link {
     display: flex;
@@ -33,7 +35,7 @@
     @media screen and (min-width: $mobile) {
         width: 450px;
     }
-    
+      
     @media screen and (min-width: $tablet) {
         width: 354px;
     }
