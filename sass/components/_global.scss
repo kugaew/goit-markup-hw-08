@@ -22,6 +22,7 @@ img {
     padding: 0 15px;
     margin: 0 auto;
     min-width: 320px;
+    width: 100%;
     
 
     /* outline: 1px red solid; */
@@ -59,7 +60,7 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
 
-    min-width: 320px;
+    /* min-width: 320px; */
 
     @media screen and (min-width: $desktop) {
         padding-top: 94px;

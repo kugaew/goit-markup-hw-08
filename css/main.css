@@ -78,6 +78,7 @@ img {
   padding: 0 15px;
   margin: 0 auto;
   min-width: 320px;
+  width: 100%;
   /* outline: 1px red solid; */
 }
 @media screen and (min-width: 480px) {
@@ -114,7 +115,7 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 320px;
+  /* min-width: 320px; */
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -510,7 +511,7 @@ img {
   background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url("/images/hero-480-1x-min.jpg");
   text-align: center;
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url("/images/hero-480-2x-min.jpg");
   }
